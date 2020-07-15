@@ -3,7 +3,7 @@ require 'rspec/core'
 
 GC.disable 
 profile = StackProf.run(raw: true) do
-  RSpec::Core::Runner::run(['spec/solution_spec.rb'], $stderr, $stdout)
+  RSpec::Core::Runner::run(['spec/solution_ex2_spec.rb'], $stderr, $stdout)
 end
 
 require 'json'
